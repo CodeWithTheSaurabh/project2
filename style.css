@@ -1,0 +1,238 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Google Sans", Roboto, arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+
+
+.logo>img {
+    width: 6rem;
+
+}
+
+.nav-menu {
+    font-style: normal;
+
+}
+
+.nav-menu>a {
+    text-decoration: none;
+    justify-content: space-between;
+    margin-left: 2rem;
+    color: black;
+}
+
+.nav-menu>a:hover {
+    color: red;
+}
+
+.header {
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.contact_us>a {
+    text-decoration: none;
+    color: white;
+    background-color: #5a4bda;
+    font-style: normal;
+    padding: 6px;
+    border-radius: 7px;
+
+}
+
+.contact_us>a:hover {
+    background-color: #2d1fb2;
+}
+
+h1 {
+    color: #3d2f61;
+}
+
+.container_2 {
+    display: flex;
+    margin-left: 25px;
+    position: absolute;
+    top: 35%;
+    justify-content: space-around;
+}
+
+
+
+span {
+    color: #5955b3;
+}
+
+
+
+.btn {
+    display: inline;
+
+    margin-top: 5rem;
+
+}
+
+
+
+.btn>a {
+    text-decoration: none;
+    background-color: #5a4bda;
+    color: white;
+    border-radius: 7px;
+    padding: 6px;
+    font-style: normal;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 1rem;
+}
+
+.btn>a:hover {
+    background-color: #2d1fb2;
+
+}
+
+.para {
+    margin-top: 1rem;
+}
+
+p {
+    /* color: #b8b8b8; */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #828282;
+    margin-top: 28px;
+}
+
+.image_2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* Move image upward */
+}
+
+.image_2>img {
+    max-width: 70%;
+    /* Reduce image size */
+    height: auto;
+    margin-top: -5rem;
+    /* Move image upward by adjusting margin-top */
+}
+
+.text {
+    font-size: larger;
+}
+
+
+
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: whitesmoke;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .contact_us {
+        margin-top: 10px;
+    }
+
+    .container_2 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .image_2>img{
+        max-width:29rem;
+        height: auto;
+    }
+
+}
+
+
+/* hamburger menu */
+/* Add this CSS for the hamburger icon and menu transition */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+   
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.3s; /* Transition for smooth animation */
+    
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: whitesmoke;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: -2.9rem;
+    }
+
+    .bar {
+        transition: 0.3s; /* Add transition for smooth animation */
+    }
+}
+
+
+
+
